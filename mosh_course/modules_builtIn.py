@@ -13,14 +13,14 @@ print(random.choice(members)    )
 
 
 
-
 class Dice:
     def roll(self):
-        self.x = random.randint(1,6)
-        self.y = random.randint(1,6)
-        return self
+        x = random.randint(1,6)
+        y = random.randint(1,6)
+        return x,y
     
 dice1 = Dice()
-print(dice1.roll().x)
+print(dice1.roll())
+print(dice1.roll())
     
 
